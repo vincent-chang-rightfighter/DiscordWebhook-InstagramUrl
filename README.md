@@ -13,9 +13,12 @@
 
 >執行腳本 `sh run.sh` 
 
+this script run main.py 5 minutes again
+>此腳本每5分鐘執行1次
+
 ## Configuration
 
-###Modify main.py 
+### Modify main.py 
 #### line 10
 Replace to your discord server webhook link
 >替換成你的伺服器 webhook 連結
