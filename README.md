@@ -19,6 +19,7 @@ this script run main.py 5 minutes again
 ## Configuration
 
 ### Modify main.py 
+
 #### line 10
 Replace to your discord server webhook link
 >替換成你的伺服器 webhook 連結
@@ -33,9 +34,16 @@ Use imginn.org search instagram account id and replace this link
 RequestUrl = "https://imginn.org/Accountid/"
 ```
 
-#### line 42
+#### line 56
+Change webhook embed post author name and icon_url
+>修改 webhook 嵌入的作者名字及作者icon
+```py
+embed.set_author(name='Accountid',icon_url='https://Accountid_icon.png')
+```
+
+#### line 60
 Change webhook post content to your style
 >修改 webhook 傳送內容成你的風格
 ```py
-            webhook.send(content=f"Accountid send a post\n{embed.url}")
+webhook.send( content=f"Accountid send a post\n{hyperLink}", embed=embed)
 ```
