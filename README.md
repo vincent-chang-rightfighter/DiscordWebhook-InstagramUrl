@@ -20,30 +20,32 @@ this script run main.py 5 minutes again
 
 ### Modify main.py 
 
-#### line 10
+#### line 10 & line 12
+
 Replace to your discord server webhook link
 >替換成你的伺服器 webhook 連結
 ```py
-webHookUrl = 'https://discord.com/api/webhooks/...'
+webHookUrl = ['https://discord.com/api/webhooks/...AccountidA',
+              'https://discord.com/api/webhooks/...AccountidB']
 ```
 
-#### line 11
-Use imginn.org search instagram account id and replace this link
->用 imginn.org 搜尋 instagram 帳號並替換成該連結
+Use imginn.org search instagram account id and replace it
+>用 imginn.org 搜尋 instagram 帳號並替換成它
 ```py
-RequestUrl = "https://imginn.org/Accountid/"
+Instagram_Accounts_id = ['AccountidA', 'AccountidB']
 ```
+A webhook to receive an IG account
+Increase or decrease according to the number of IG accounts
+The following relation table is for reference.
 
-#### line 56
-Change webhook embed post author name and icon_url
->修改 webhook 嵌入的作者名字及作者icon
-```py
-embed.set_author(name='Accountid',icon_url='https://Accountid_icon.png')
-```
+|IG Account| Webhook|
+|---|---|
+|AccountidA|https://discord.com/api/webhooks/...AccountidA|
+|AccountidB|https://discord.com/api/webhooks/...Accountidb|
 
-#### line 60
+#### line 67
 Change webhook post content to your style
 >修改 webhook 傳送內容成你的風格
 ```py
-webhook.send( content=f"Accountid send a post\n{hyperLink}", embed=embed)
+webhook.send( content=f"{Accountname} send a post\n{hyperLink}", embed=embed)
 ```
