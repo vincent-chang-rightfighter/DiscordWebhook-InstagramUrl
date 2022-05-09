@@ -35,7 +35,9 @@ Use imginn.org search instagram account id and replace it
 Instagram_Accounts_id = ['AccountidA', 'AccountidB']
 ```
 A webhook to receive an IG account
+
 Increase or decrease according to the number of IG accounts
+
 The following relation table is for reference.
 
 |IG Account| Webhook|
